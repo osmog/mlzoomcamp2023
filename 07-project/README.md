@@ -19,3 +19,14 @@ In this project the Jupyter notebook contains the following steps:
     * sends a request with sample data to test the app
 * Create a docker file
 
+### How to use
+
+* Load docker image  
+```bash
+docker pull omogyliuk/carown-prediction:latest
+```
+* Run the container  
+```bash
+docker run -it -p 9696:9696 omogyliuk/carown-prediction:latest
+```
+* Run `predict-test.py`
