@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  tomato-model:
+    image: tomato-model:xception-0898-001
+  gateway:
+    image: tomato-gateway:001
+    environment:
+      - TF_SERVING_HOST=tomato-model:8500
+    ports:
+      - "9696:9696"
